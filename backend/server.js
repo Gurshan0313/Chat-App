@@ -17,7 +17,10 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' ? false : 'http://localhost:3000',
+  origin: [
+    "http://localhost:3000",
+    "https://your-chat-app-frontend.netlify.app" // We'll update this later
+  ],
   credentials: true
 }));
 app.use(express.json());
