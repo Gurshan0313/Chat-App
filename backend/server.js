@@ -19,7 +19,7 @@ connectDB();
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://your-chat-app-frontend.netlify.app" // We'll update this later
+    "https://chat-2t9t0unbs-gurshan0313s-projects.vercel.app/" 
   ],
   credentials: true
 }));
