@@ -7,7 +7,7 @@ const Room = require('./models/Room');
 const setupSocket = (server) => {
   const io = socketIO(server, {
     cors: {
-      origin: process.env.NODE_ENV === 'production' ? false : ['http://localhost:3000'],
+      origin: process.env.NODE_ENV === 'production' ? false : ['https://chat-2t9t0unbs-gurshan0313s-projects.vercel.app'],
       credentials: true
     }
   });
